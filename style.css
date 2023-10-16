@@ -55,7 +55,7 @@ nav::before {
   left: 100%;
 }
 
-main {
+.profile {
   flex: 1;
   padding: 2rem;
   color: #1f2027;
@@ -63,16 +63,16 @@ main {
   flex-direction: column;
 }
 
-main h1 {
+.profile h1 {
   margin-bottom: 1rem;
 }
 
-main .copyright {
+.profile .copyright {
   margin-top: auto;
   font-size: 0.9rem;
 }
 
-main .copyright span {
+.profile .copyright span {
   color: var(--main-color);
   font-weight: 500;
   cursor: pointer;
@@ -155,6 +155,7 @@ nav:hover .shrink-btn,
 
 .sidebar-links ul {
   position: relative;
+  
 }
 
 .sidebar-links li {
@@ -169,6 +170,7 @@ nav:hover .shrink-btn,
   display: flex;
   align-items: center;
   height: 53px;
+  text-decoration-line: none !important;
 }
 
 .icon {
@@ -386,4 +388,32 @@ body.shrink .admin-profile {
 
 body.shrink .tooltip {
   display: grid;
+}
+.cv{
+  width: 150px;
+  padding: 8px;
+  border-radius: 20px;
+  background: #3d5af1;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.cv:hover{
+  width: 150px;
+  padding: 8px;
+  border-radius: 20px;
+  background: #4b4d57;
+  border: none;
+}
+
+.janak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mms {
+  border: 2px solid var(--first-color);
+  border-radius: 50%;
 }
