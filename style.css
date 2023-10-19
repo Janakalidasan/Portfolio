@@ -7,7 +7,26 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --header-height: 3rem;
+  --font-semi: 600;
+}
 
+/* Colors */
+
+:root {
+  --first-color: #08bd3c;
+  --second-color: #0e2431;
+  --gardient-color: #08bd3c;
+}
+
+/* FONT STYLE */
+:root {
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --nomral-font-size: 0.938rem;
+}
 :root {
   --main-color: #3d5af1;
   --main-color-dark: #3651d4;
@@ -57,7 +76,7 @@ nav::before {
 
 .profile {
   flex: 1;
-  padding: 2rem;
+  padding: 1rem;
   color: #1f2027;
   display: flex;
   flex-direction: column;
@@ -416,4 +435,107 @@ body.shrink .tooltip {
 #mms {
   border: 2px solid var(--first-color);
   border-radius: 50%;
+}
+.work_img {
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.first-image{
+  height: 230px;
+  transition: 1s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.first-image:hover{
+  transform: scale(1.05);
+}
+.algon{
+  margin-left: 10px;
+}
+.fl-card{
+  display: flex;
+}
+.sect-1{
+  margin-top: 20px;
+  display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.sect-2{
+  margin-top: 20px;
+  display: flex;
+    justify-content:space-between;
+}
+.sect-3{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sect-4{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+/* html */
+.html {
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.new-think{
+  font-size: 20px;
+}
+
+.skills_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: 0.5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  width: 50%;
+}
+
+.skill_icon {
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: #3d5af1;
+}
+
+.skills_name {
+  display: flex;
+  align-items: center;
+}
+
+.skill_bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #3d5af1;
+  height: 0.25rem;
+  border-radius: 0.5rem;
+  z-index: var(--z-back);
+ 
+}
+
+
+.skill_html {
+  width: 95%;
+}
+.skill_css {
+  width: 85%;
+}
+
+.skill_js {
+  width: 75%;
+}
+
+.skill_ui {
+  width: 85%;
 }
