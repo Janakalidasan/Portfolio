@@ -9,10 +9,10 @@
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
-<body>
+<body style="overflow-y: hidden;">
   <nav>
     <div class="sidebar-top">
       <span class="shrink-btn">
@@ -30,8 +30,8 @@
     <div class="sidebar-links">
       <ul>
         <div class="active-tab"></div>
-        <li class="tooltip-element" data-tooltip="0">
-          <a href="#" class="active" data-active="0">
+        <li class="tooltip-element" data-tooltip="0" id="profile-s">
+          <a href="#profile" class="active" data-active="0">
             <div class="icon">
               <i class='bx bx-user'></i>
               <i class='bx bxs-user'></i>
@@ -39,8 +39,8 @@
             <span class="link hide">My Profile</span>
           </a>
         </li>
-        <li class="tooltip-element" data-tooltip="1">
-          <a href="#" data-active="1">
+        <li class="tooltip-element" data-tooltip="1" id="projeccts">
+          <a href="#work" data-active="1">
             <div class="icon">
               <i class='bx bx-folder'></i>
               <i class='bx bxs-folder'></i>
@@ -49,7 +49,7 @@
           </a>
         </li>
         <li class="tooltip-element" data-tooltip="2">
-          <a href="#" data-active="2">
+          <a href="#skills" data-active="2">
             <div class="icon">
               <i class='bx bx-message-square-detail'></i>
               <i class='bx bxs-message-square-detail'></i>
@@ -58,7 +58,7 @@
           </a>
         </li>
         <li class="tooltip-element" data-tooltip="3">
-          <a href="#" data-active="3">
+          <a href="#contacts" data-active="3">
             <div class="icon">
               <i class='bx bx-message-alt'></i>
               <i class='bx bxs-message-alt'></i>
@@ -102,13 +102,14 @@
 
   </nav>
 </div>
-<div class="container">
-  <div class="profile">
+<div class="">
+  <div class="profile" id="profile">
     <h1>My Profile</h1>
     <div class="janak">
       <img src="./img/jana.png" class="img-fluid" id="mms">
     </div>
     <h3>I'm Janakalidasan [Web-Developer]</h3>
+    <br>
     <p class="text">
       I have completed a Bachelor's degree in Mechanical Engineer from Thanthai Periyar Government of Institute of
       Technology and I'm currently working with Web Developer from Avance Techlabs. Since then, I have been exploring
@@ -127,8 +128,10 @@
       </div>
     </div>
   </div>
-
-  <div class="profile">
+  <br>
+  <br>
+<!-- work -->
+  <div class="profile" id="work" style="overflow-y: auto !important;">
     <h1>My Project work</h1>
     <div class="sect-1">
       <img src="./img/01.png" alt="" class="first-image">
@@ -144,9 +147,10 @@
 
   </div>
 
-  <div class="profile" >
+  <!-- skill -->
+  <div class="profile" id="skills">
     <h1>My Skills</h1>
-    <div class="skills_data aos-init aos-animate" data-aos="fade-right">
+    <div class="skills_data aos-init aos-animate" data-aos="fade-right" data-aos-delay="250">
       <div class="skills_name">
         <i class="bx bxl-html5 skill_icon"></i>
         <span class="skill_name">Html</span>
@@ -208,12 +212,114 @@
     
       <div class="skill_bar skill_ui"></div>
     </div>
-</div>
 
+    <br>
+<div class="skills_data" data-aos="fade-right" data-aos-delay="250">
+  <div class="skills_name">
+    <i class="bx  skill_icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" style="fill: rgba(61, 90, 241, 1);transform: ;msFilter:;"><path d="M19.891 7.788a8.966 8.966 0 0 1 1.099 4.313 8.986 8.986 0 0 1-4.47 7.771l2.746-7.939c.513-1.282.684-2.309.684-3.219a7.165 7.165 0 0 0-.059-.926m-6.651.087a14.14 14.14 0 0 0 1.026-.088c.485-.063.428-.775-.056-.749 0 0-1.463.112-2.4.112-.887 0-2.375-.125-2.375-.125-.487-.024-.55.713-.061.738 0 0 .449.052.938.075l1.399 3.838-1.975 5.899-3.274-9.724a17.006 17.006 0 0 0 1.028-.083c.487-.063.43-.775-.055-.747 0 0-1.455.115-2.395.115-.167 0-.365-.007-.575-.013C6.093 4.726 8.862 3.113 12 3.113c2.341 0 4.471.894 6.071 2.36-.038-.002-.076-.008-.117-.008-.883 0-1.51.77-1.51 1.596 0 .741.427 1.369.883 2.108.343.601.742 1.37.742 2.481 0 .763-.295 1.662-.685 2.899l-.896 2.987-3.25-9.675.002.014zM12 21.087a8.983 8.983 0 0 1-2.54-.364l2.697-7.838 2.763 7.572c.021.044.042.085.065.124a9.016 9.016 0 0 1-2.985.508m-8.99-8.988a8.94 8.94 0 0 1 .778-3.658l4.287 11.749a8.993 8.993 0 0 1-5.065-8.091m8.99-10c-5.513 0-10 4.487-10 10s4.487 10 10 10 10-4.487 10-10-4.487-10-10-10" fill="#3d5af1"></path></svg></i>
+    <span class="skill_name">Wordpress</span>
   </div>
 
+  <div><span class="skill_percentage">85%</span></div>
+
+  <div class="skill_bar skill_ui"></div>
+</div>
+
+<br>
+<div class="skills_data" data-aos="fade-right" data-aos-delay="250">
+  <div class="skills_name">
+    <i class="bx  skill_icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" style="fill: rgba(61, 90, 241, 1);transform: ;msFilter:;"><path d="M15.332 8.668a3.333 3.333 0 0 0 0-6.663H8.668a3.333 3.333 0 0 0 0 6.663 3.333 3.333 0 0 0 0 6.665 3.333 3.333 0 0 0 0 6.664A3.334 3.334 0 0 0 12 18.664V8.668h3.332z"></path><circle cx="15.332" cy="12" r="3.332"></circle></svg></i>
+    <span class="skill_name">Figma</span>
+  </div>
+
+  <div><span class="skill_percentage">65%</span></div>
+
+  <div class="skill_bar skill_ui-f"></div>
+</div>
+<br>
+<div class="skills_data" data-aos="fade-right" data-aos-delay="250">
+  <div class="skills_name">
+    <i class="bx  skill_icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" height="24" viewBox="0 0 24 24" width="24"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="12" x2="12" y1="20.9438" y2="3.03371"><stop offset="0" stop-color="#0078d4"/><stop offset=".16" stop-color="#1380da"/><stop offset=".53" stop-color="#3c91e5"/><stop offset=".82" stop-color="#559cec"/><stop offset="1" stop-color="#5ea0ef"/></linearGradient><path d="m21 6.3708v10.9439l-4.5 3.6853-6.975-2.5393v2.5169l-3.94874-5.1574 11.50874.8989v-9.85392zm-3.8362.55055-6.4576-3.92135v2.57305l-5.9287 1.74157-1.7775 2.28091v5.17977l2.5425 1.1236v-6.64045z" fill="url(#a)"/></svg></i>
+    <span class="skill_name">Devops</span>
+  </div>
+
+  <div><span class="skill_percentage">45%</span></div>
+
+  <div class="skill_bar skill_devops"></div>
+</div>
+</div>
+
+<!-- contact -->
+<div class="profile" id="contacts">
+  <h1>Contact</h1>
+  <div class="container">
+    <div class="form-container">
+      <div class="left-container">
+        <div class="left-inner-container">
+        <h2>Let's Chat</h2>
+        <p>Whether you have a question, want to start a project or            simply want to connect.</p>
+          <br>
+          <p>Feel free to send me a message in the contact form</p>
+      </div>
+        </div>
+      <div class="right-container">
+        <div class="right-inner-container">
+          <form action="#">
+        <h2 class="lg-view">Contact</h2>
+        <h2 class="sm-view">Let's Chat</h2>
+             <p>* Required</p>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+            <input type="text" placeholder="Name *"  />
+        <input type="email" placeholder="Email *" />
+        <input type="text" placeholder="Company" />
+        <input type="phone" placeholder="Phone" />
+            <textarea rows="4" placeholder="Message"></textarea>
+        <button>Submit</button>
+      </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+ 
+</div>
+
+
+
+</div>
+<!-- <script>
+  $(document).ready(function() {
+    // Add a click event handler for table cells with IDs
+    $("#projeccts").click(function() {
+        // Remove the 'active' class from all table cells with IDs
+        // $("#profile").addClass('active-12');
+       
+        // Toggle the 'active' class on the clicked table cell
+        $("#work").addClass('active-13');
+    });
+});
+
+</script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>
+  AOS.init({
+    duration:1200,
+    once: false,
+  });
+</script>
   <script src="app.js"></script>
 </body>
 
 </html>
+
+
 
